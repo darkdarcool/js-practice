@@ -1,5 +1,10 @@
 const main = require('./index');
-
-test('wants list', () => {
-  expect(main()).toBe("Hello World!")
+test('Returns proper list data', () => {
+  mystuff = [
+	'H', 'e', 'l', 'l',
+	'o', '',  'W', 'o',
+	'r', 'l', 'd', '!',
+	''
+  ]
+  expect(main()).toBe(mystuff)
 });

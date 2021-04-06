@@ -1,20 +1,21 @@
 class make {
 	constructor(value) {
-		this.list = value
+		this.list = value;
 	}
 	createlist() {
-		var stuff = this.list.split(" ")
-		return stuff 
+		var stuff = this.list.split(" ");
+		return stuff;
 	}
 	createstring() {
-		var stuff = this.list
-		return stuff.join("")
+		var stuff = this.list;
+		return stuff.join("");
 	}
 }
 function main() {
-	mystuff = ["Hello ", "world!"]
-	myListData = new make(mystuff)
-	mylist = myListData.createstring()
-	//console.log(mylist) 
+	mylist = new make("H e l l o  W o r l d ! ")
+	mystuff = mylist.createlist()
+	return mystuff
 }
-module.exports = main()
+let stuff = main();
+console.log(stuff);
+module.exports = main;
