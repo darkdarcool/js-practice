@@ -11,7 +11,10 @@ class make {
 		return stuff.join("")
 	}
 }
-mystuff = ["Hello ", "world!"]
-myListData = new make(mystuff)
-mylist = myListData.createstring()
-console.log(mylist) 
+function main() {
+	mystuff = ["Hello ", "world!"]
+	myListData = new make(mystuff)
+	mylist = myListData.createstring()
+	//console.log(mylist) 
+}
+module.exports = main()
